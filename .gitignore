@@ -136,7 +136,7 @@ build/
 # 	
 # 	#     (requires option 2 above): Personal Schemes
 # 	#
-        ##!xcuserdata/**/xcschemes/*
+        !xcuserdata/**/xcschemes/*
 	## User settings
 	xcuserdata/
 
