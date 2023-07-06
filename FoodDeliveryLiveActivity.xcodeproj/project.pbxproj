@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE4FA7F281173776716EAFCC /* Pods_FoodDeliveryLiveActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 734E04D62133A403D90678B3 /* Pods_FoodDeliveryLiveActivity.framework */; };
 		AF4232102A565B3400B8BD6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF42320F2A565B3400B8BD6E /* AppDelegate.swift */; };
 		AF4232122A565B3400B8BD6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4232112A565B3400B8BD6E /* SceneDelegate.swift */; };
 		AF4232142A565B3400B8BD6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4232132A565B3400B8BD6E /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		734E04D62133A403D90678B3 /* Pods_FoodDeliveryLiveActivity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodDeliveryLiveActivity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		973E7E3536FC4F0C7BF207EF /* Pods-FoodDeliveryLiveActivity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodDeliveryLiveActivity.debug.xcconfig"; path = "Target Support Files/Pods-FoodDeliveryLiveActivity/Pods-FoodDeliveryLiveActivity.debug.xcconfig"; sourceTree = "<group>"; };
 		AF42320C2A565B3400B8BD6E /* FoodDeliveryLiveActivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDeliveryLiveActivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF42320F2A565B3400B8BD6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF4232112A565B3400B8BD6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		AF4232182A565B3600B8BD6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF42321B2A565B3600B8BD6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF42321D2A565B3600B8BD6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5BE8DD2AD89D28D96280001 /* Pods-FoodDeliveryLiveActivity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodDeliveryLiveActivity.release.xcconfig"; path = "Target Support Files/Pods-FoodDeliveryLiveActivity/Pods-FoodDeliveryLiveActivity.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE4FA7F281173776716EAFCC /* Pods_FoodDeliveryLiveActivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		771C304EC94014756B2B8961 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				734E04D62133A403D90678B3 /* Pods_FoodDeliveryLiveActivity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FD287145F72FD7537F9B54D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				973E7E3536FC4F0C7BF207EF /* Pods-FoodDeliveryLiveActivity.debug.xcconfig */,
+				B5BE8DD2AD89D28D96280001 /* Pods-FoodDeliveryLiveActivity.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AF4232032A565B3400B8BD6E = {
 			isa = PBXGroup;
 			children = (
 				AF42320E2A565B3400B8BD6E /* FoodDeliveryLiveActivity */,
 				AF42320D2A565B3400B8BD6E /* Products */,
+				7FD287145F72FD7537F9B54D /* Pods */,
+				771C304EC94014756B2B8961 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF4232202A565B3600B8BD6E /* Build configuration list for PBXNativeTarget "FoodDeliveryLiveActivity" */;
 			buildPhases = (
+				BC6A09DC212B81B2B0E7A298 /* [CP] Check Pods Manifest.lock */,
 				AF4232082A565B3400B8BD6E /* Sources */,
 				AF4232092A565B3400B8BD6E /* Frameworks */,
 				AF42320A2A565B3400B8BD6E /* Resources */,
+				7461A11E41BE7FEA5801CB50 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7461A11E41BE7FEA5801CB50 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodDeliveryLiveActivity/Pods-FoodDeliveryLiveActivity-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodDeliveryLiveActivity/Pods-FoodDeliveryLiveActivity-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodDeliveryLiveActivity/Pods-FoodDeliveryLiveActivity-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC6A09DC212B81B2B0E7A298 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodDeliveryLiveActivity-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AF4232082A565B3400B8BD6E /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		AF4232212A565B3600B8BD6E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 973E7E3536FC4F0C7BF207EF /* Pods-FoodDeliveryLiveActivity.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		AF4232222A565B3600B8BD6E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5BE8DD2AD89D28D96280001 /* Pods-FoodDeliveryLiveActivity.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
